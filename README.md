@@ -46,6 +46,14 @@ This is a responsive React-based website for **Drive Tech Systems Pvt Ltd**, sho
    ```bash
    npm start
    ```
+5. start the backend server:
+   ```bash
+   cd backend
+   ```
+
+   ```bash
+   node server.js
+   ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
