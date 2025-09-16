@@ -35,6 +35,10 @@ This is a responsive React-based website for **Drive Tech Systems Pvt Ltd**, sho
    cd drive-tech-website
    ```
 
+   ```bash
+   cd main-app
+   ```
+
 3. Install dependencies:
 
    ```bash
