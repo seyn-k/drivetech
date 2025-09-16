@@ -1,0 +1,125 @@
+/* Navbar.css */
+
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0); /* fully transparent */
+  backdrop-filter: blur(12px);         /* gaussian blur of background */
+  -webkit-backdrop-filter: blur(12px); /* safari support */
+  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* optional subtle border */
+}
+
+
+/* Logo */
+.logo img {
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Menu links wrapper */
+.menu-wrapper {
+  position: absolute;
+  align-items: center;
+}
+
+/* Menu links */
+.menu {
+  display: flex;
+  gap: 25px; /* space between menu items */
+  align-items: center;
+  
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  color: #0077ff;
+  transform: scale(1.05);
+}
+
+/* Hamburger menu (for mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .menu-wrapper {
+    position: static;
+    transform: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    padding: 20px;
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: right 0.3s ease;
+  }
+
+  .menu a {
+    padding: 10px 0;
+    color: #222;
+  }
+
+  .menu.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

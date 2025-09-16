@@ -1,0 +1,46 @@
+.client-say-section {
+  background: #f8fafc;
+  padding: 60px 20px 40px 20px;
+  text-align: center;
+}
+
+.client-say-section h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.client-testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 320px;
+  padding: 28px 20px 20px 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card p {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  font-size: 1rem;
+  color: #0077ff;
+  margin: 0;
+  text-align: right;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}

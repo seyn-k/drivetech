@@ -1,0 +1,447 @@
+.about-us-page {
+  min-height: 60vh;
+  background: #fff;
+  padding: 80px 20px 40px 20px;
+  color: #222;
+}
+
+.about-us-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.about-us-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.about-us-logo img {
+  width: 140px;
+  height: auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: block;
+  margin: 0 auto;
+}
+
+.about-us-intro {
+  max-width: 600px;
+}
+
+.about-us-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.about-us-intro p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.about-us-details {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us-details p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.about-us-details-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.about-us-details-flex h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.about-us-details-flex p {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+}
+
+.about-toggle {
+  margin: 24px 0 12px 0;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.about-toggle button {
+  padding: 8px 24px;
+  border: none;
+  background: #eee;
+  color: #222;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.about-toggle button.active {
+  background: #0077ff;
+  color: #fff;
+}
+
+.about-toggle-content p {
+  margin-top: 8px;
+  font-size: 1.08rem;
+  background: #f7f9fa;
+  padding: 16px 18px;
+  border-radius: 8px;
+}
+
+.about-toggle-slider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0 12px 0;
+  justify-content: flex-start;
+}
+
+.about-toggle-slider .active-label {
+  color: #0077ff;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0077ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.what-we-do {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.what-we-do h1 {
+  font-size: 1.7rem;
+  margin-bottom: 28px;
+}
+
+.what-we-do-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.what-we-do-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 300px;
+  padding: 28px 18px 20px 18px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.what-we-do-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.18rem;
+  color: #0077ff;
+}
+
+.what-we-do-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.what-we-do-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.what-we-do-cards.custom-layout {
+  gap: 32px;
+  justify-content: left;
+}
+
+.card-large {
+  width: 320px;
+  min-width: 260px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 28px 18px 20px 18px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.what-we-do-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.what-we-do-card-group .what-we-do-card {
+  width: 320px;
+  min-width: 260px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 28px 18px 20px 18px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.what-we-do-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.18rem;
+  color: #0077ff;
+}
+
+.what-we-do-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.what-we-do-card:hover,
+.card-large:hover,
+.what-we-do-card-group .what-we-do-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.about-testimonials {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.about-testimonials h2 {
+  font-size: 1.7rem;
+  margin-bottom: 28px;
+}
+
+.about-testimonial-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 160px;
+  position: relative;
+}
+
+.about-testimonial-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 300px;
+  padding: 28px 18px 20px 18px;
+  text-align: left;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  position: absolute;
+  left: 0; right: 0; margin: auto;
+}
+
+.about-testimonial-card.active {
+  opacity: 1;
+  position: relative;
+  transform: translateX(0);
+}
+
+.about-testimonial-card p {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.about-testimonial-card span {
+  font-size: 1rem;
+  color: #0077ff;
+  margin: 0;
+  text-align: right;
+}
+
+.about-testimonial-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.about-testimonial-banner {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-testimonial-slide {
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  min-height: 120px;
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 1;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-testimonial-slide p {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.about-testimonial-slide span {
+  font-size: 1rem;
+  color: #0077ff;
+  margin: 0;
+  text-align: center;
+}
+
+.about-testimonial-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.about-testimonial-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.about-testimonial-dots .dot.active {
+  background: #0077ff;
+}
+
+@media (max-width: 700px) {
+  .about-us-header {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+  }
+  .about-us-intro h1 {
+    text-align: center;
+  }
+  .about-us-details-flex h1,
+  .about-us-details-flex p {
+    text-align: center;
+  }
+  .about-testimonial-banner {
+    max-width: 95vw;
+    min-height: 140px;
+  }
+  .about-testimonial-slide {
+    padding: 24px 8px 18px 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .what-we-do-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .what-we-do-card {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+  .what-we-do-cards.custom-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .card-large,
+  .what-we-do-card-group .what-we-do-card {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+  .about-testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .about-testimonial-card {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+}

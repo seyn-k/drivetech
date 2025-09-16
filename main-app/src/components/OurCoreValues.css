@@ -1,0 +1,82 @@
+.core-values-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f4f7fc;
+}
+
+.core-values-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.core-values-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.core-value-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "icon title"
+    "icon description";
+  gap: 0.25rem 1.5rem; /* row-gap column-gap */
+  align-items: start;
+  padding: 2rem;
+  background: #fff;
+  border-left: 5px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.core-value-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-left-color: #0077ff;
+}
+
+.core-value-icon {
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.core-value-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #0077ff;
+}
+
+.core-value-item h3 {
+  grid-area: title;
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  align-self: end;
+}
+
+.core-value-item p {
+  grid-area: description;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  align-self: start;
+}
+
+@media (max-width: 600px) {
+  .core-value-item {
+    grid-template-areas:
+      "icon title"
+      "description description";
+    gap: 0.5rem 1rem;
+  }
+}
