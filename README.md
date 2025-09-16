@@ -67,12 +67,6 @@ src/
 - Click the **Go Up** button to smoothly scroll back to the top.
 - Navigate to the **About** page via the Navbar for company information.
 
-## Screenshots
-
-![Hero Section](screenshots/hero.png)  
-![Explore Cards](screenshots/explore-cards.png)  
-![Slew Drives Banner](screenshots/slew-drives.png)
-
 ## License
 
 This project is licensed under the MIT License.
