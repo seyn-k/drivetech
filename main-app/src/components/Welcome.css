@@ -54,3 +54,20 @@
   line-height: 1.6;
   margin-bottom: 12px;
 }
+
+@media (max-width: 768px) {
+  .company-intro {
+    padding: 40px 15px 30px 15px;
+  }
+  .welcome-row {
+    gap: 30px;
+  }
+  .welcome-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .welcome-note h2 {
+    font-size: 1.8rem;
+  }
+}

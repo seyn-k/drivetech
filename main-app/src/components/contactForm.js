@@ -12,6 +12,8 @@ export default function ContactForm() {
   });
   const [subscribed, setSubscribed] = useState(false);
   const [showPopup, setShowPopup] = useState(false); // Add popup state
+  const [showError, setShowError] = useState(false); // Add error popup state
+  const [errorMessage, setErrorMessage] = useState(""); // Add error message state
   const formRef = useRef();
 
   const handleChange = (e) => {
@@ -42,7 +44,9 @@ export default function ContactForm() {
       setTimeout(() => setShowPopup(false), 3500); // Hide after 3.5s
     } catch (err) {
       console.error("Error details:", err);
-      alert("Error sending message");
+      setErrorMessage("Error sending message. Please try again.");
+      setShowError(true);
+      setTimeout(() => setShowError(false), 4000); // Hide after 4s
     }
   };
 
@@ -67,6 +71,11 @@ export default function ContactForm() {
       {showPopup && (
         <div className="submission-popup">
           Submission successful
+        </div>
+      )}
+      {showError && (
+        <div className="error-popup">
+          {errorMessage}
         </div>
       )}
     </>

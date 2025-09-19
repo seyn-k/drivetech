@@ -110,3 +110,16 @@
 .products-page {
   scroll-margin-top: 100px; /* If you use anchor links */
 }
+
+@media (max-width: 768px) {
+  .our-product-section {
+    padding: 40px 15px;
+  }
+  .our-product-section h2 {
+    font-size: 1.8rem;
+  }
+  .product-card {
+    width: 90%;
+    max-width: 350px;
+  }
+}

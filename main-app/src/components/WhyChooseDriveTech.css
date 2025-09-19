@@ -53,6 +53,14 @@
 }
 
 @media (max-width: 900px) {
+  .why-choose-section {
+    padding: 40px 15px;
+  }
+
+  .why-choose-section h2 {
+    font-size: 1.8rem;
+  }
+
   .why-choose-strips {
     flex-direction: column;
     align-items: center;
@@ -60,5 +68,6 @@
   }
   .why-choose-strip {
     width: 90%;
+    max-width: 400px;
   }
 }

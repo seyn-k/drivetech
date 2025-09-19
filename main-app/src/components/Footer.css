@@ -89,7 +89,7 @@
     align-items: center;
     gap: 28px;
   }
-  .footer-logo-address, .footer-links {
+  .footer-logo-address, .footer-nav, .footer-links {
     align-items: center;
     text-align: center;
   }

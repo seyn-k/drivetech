@@ -390,6 +390,10 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 700px) {
+  .about-us-page {
+    padding: 60px 15px 30px 15px;
+  }
+
   .about-us-header {
     flex-direction: column;
     gap: 24px;
@@ -397,11 +401,15 @@ input:checked + .slider:before {
     align-items: center;
   }
   .about-us-intro h1 {
+    font-size: 1.8rem;
     text-align: center;
   }
   .about-us-details-flex h1,
   .about-us-details-flex p {
     text-align: center;
+  }
+  .about-us-details-flex h1 {
+    font-size: 1.8rem;
   }
   .about-testimonial-banner {
     max-width: 95vw;
@@ -409,6 +417,9 @@ input:checked + .slider:before {
   }
   .about-testimonial-slide {
     padding: 24px 8px 18px 8px;
+  }
+  .about-toggle, .about-toggle-slider {
+    justify-content: center;
   }
 }
 
@@ -420,6 +431,7 @@ input:checked + .slider:before {
   }
   .what-we-do-card {
     width: 90%;
+    max-width: 450px;
     align-items: center;
     text-align: center;
   }
@@ -431,6 +443,7 @@ input:checked + .slider:before {
   .card-large,
   .what-we-do-card-group .what-we-do-card {
     width: 90%;
+    max-width: 450px;
     align-items: center;
     text-align: center;
   }
@@ -441,6 +454,7 @@ input:checked + .slider:before {
   }
   .about-testimonial-card {
     width: 90%;
+    max-width: 450px;
     align-items: center;
     text-align: center;
   }

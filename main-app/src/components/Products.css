@@ -257,6 +257,9 @@
     padding: 60px 20px;
     gap: 40px;
   }
+  .explore-container {
+    flex-direction: column;
+  }
 
   .explore-title {
     text-align: center;
@@ -274,5 +277,104 @@
 
   .extra-card {
     width: 90%;
+  }
+
+  .slew-drives,
+  .slew-drives-slider,
+  .slew-slide {
+    width: 100%;
+  }
+
+  .slew-drives-slider {
+    min-height: 300px;
+  }
+
+  .slew-slide {
+    height: 300px;
+  }
+
+  .middle-breaker {
+    padding: 30px 10px;
+  }
+}
+
+/* Mobile-first fine tuning without affecting desktop */
+@media (max-width: 600px) {
+  .products-page {
+    padding: 70px 12px; /* account for fixed navbar, reduce sides */
+    gap: 28px;
+  }
+
+  .explore-container {
+    gap: 12px;
+  }
+
+  .explore-title {
+    font-size: 1.4rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .products-ticker {
+    width: 100%;
+  }
+
+  .product-card {
+    min-width: 82vw; /* large touch target but fits viewport */
+    height: auto;
+    padding: 16px;
+    margin-right: 16px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+
+  .extra-card {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .extra-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .extra-card p {
+    font-size: 0.95rem;
+  }
+
+  .slew-drives {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .slew-drives-slider {
+    min-height: 240px;
+  }
+
+  .slew-slide {
+    height: 240px;
+    border-radius: 10px;
+  }
+
+  .slew-slide img {
+    width: 92%;
+  }
+
+  .slew-drive-actions {
+    gap: 12px;
+  }
+
+  .slew-action-btn {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+
+  .slew-drives-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
   }
 }

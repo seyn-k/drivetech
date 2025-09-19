@@ -200,24 +200,69 @@ form button:hover {
 
 /* Submission Popup */
 .submission-popup {
-  position: absolute;
-  bottom: 18px;
-  right: 18px;
-  min-width: 180px;
-  max-width: 260px;
-  background: rgba(0, 180, 70, 0.92); /* green background */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  min-width: 200px;
+  max-width: 280px;
+  background: rgba(0, 180, 70, 0.95); /* green background */
   color: #fff;
-  padding: 8px 18px;
-  border-radius: 18px;
-  font-size: 0.98rem;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
-  z-index: 10;
-  animation: fadeIn 0.5s;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  z-index: 10000;
+  animation: slideInUp 0.4s ease-out;
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(40px);}
-  to { opacity: 1; transform: translateY(0);}
+@keyframes slideInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px) translateX(20px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Error Popup */
+.error-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  min-width: 200px;
+  max-width: 280px;
+  background: rgba(220, 53, 69, 0.95); /* red background */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  z-index: 10000;
+  animation: slideInUp 0.4s ease-out;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .contact {
+    padding: 60px 15px;
+  }
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+  form {
+    padding: 20px;
+  }
 }

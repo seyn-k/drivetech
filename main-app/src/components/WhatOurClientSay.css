@@ -44,3 +44,16 @@
   transform: scale(1.04);
   box-shadow: 0 8px 24px rgba(0,0,0,0.13);
 }
+
+@media (max-width: 768px) {
+  .client-say-section {
+    padding: 40px 15px;
+  }
+  .client-say-section h2 {
+    font-size: 1.8rem;
+  }
+  .testimonial-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}

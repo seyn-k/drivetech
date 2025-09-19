@@ -13,28 +13,19 @@ const Navbar = () => {
           <img src={logo} alt="Drive Tech Systems Logo" />
         </Link>
       </div>
+
+      {/* Fullscreen menu */}
       <div className={`menu ${isOpen ? "open" : ""}`}>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About us</Link>
-          </li>
-          <li>
-            <Link to="/products">Products</Link>
-          </li>
-          <li>
-            <Link to="/application">Application</Link>
-          </li>
-          <li>
-            <Link to="/#contact" onClick={() => setIsOpen(false)}>
-              Contact us
-            </Link>
-          </li>
+          <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+          <li><Link to="/about" onClick={() => setIsOpen(false)}>About us</Link></li>
+          <li><Link to="/products" onClick={() => setIsOpen(false)}>Products</Link></li>
+          <li><Link to="/application" onClick={() => setIsOpen(false)}>Application</Link></li>
+          <li><Link to="/#contact" onClick={() => setIsOpen(false)}>Contact us</Link></li>
         </ul>
       </div>
 
+      {/* Hamburger */}
       <div
         className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}

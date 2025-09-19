@@ -79,4 +79,16 @@
       "description description";
     gap: 0.5rem 1rem;
   }
+
+  .core-values-section {
+    padding: 3rem 1rem;
+  }
+
+  .core-values-section h2 {
+    font-size: 2rem;
+  }
+
+  .core-value-item {
+    padding: 1.5rem;
+  }
 }
